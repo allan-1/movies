@@ -1,7 +1,7 @@
 # Movies
 This is a movie showcasing app. You can view movie trailers and description. I have also added a link to piratesbay for each movie so that you can easily download the movie torrent.
 
-I have used [moviedb](themoviedb.org) api to fetch movies 
+I have used [moviedb](https://themoviedb.org) api to fetch movies 
 
 ![image](src/image/moviedb.png)
 
