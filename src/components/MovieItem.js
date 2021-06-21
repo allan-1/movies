@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react'
 import Videos from './Videos'
-import './App.css';
+import '../App.css';
 import Casts from './Casts';
 import Recomedations from './Recomedations';
 
@@ -34,12 +34,12 @@ function MovieItem({ match }) {
                             
                         </div>
                         <p className="ratings"><i className="fas fa-star fa-1x"></i> {item.vote_average} /10</p>
+                        <meter id='rating' value={item.vote_average / 10}>{item.vote_average * 10}%</meter>
                         <p className='tagline'>{item.tagline }</p>
-                        {/* <meter id='rating' value='0.5'>50%</meter> */}
                         <div className="overview">
                             <h2>Overview</h2>
                             <p>{item.overview}</p>
-                            {/* <a href={`https://thepiratebay10.org/search/${item.original_title}/1/99/0`}>Download</a> */}
+                            <a className="dlinks" target="_blank" rel="noreferrer" href={`https://thepiratebay10.org/search/${item.original_title}/1/99/0`}><i class="fas fa-download"></i></a>
                         </div>
                     </div>
                 </div>

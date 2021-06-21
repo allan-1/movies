@@ -332,3 +332,11 @@ nav{
 .footer i:hover{
   color: #55acee;
 }
+/* download */
+.dlinks{
+  color: #ffff;
+  font-size: 1.2rem;
+}
+.dlinks:hover{
+  color: #181616;
+}

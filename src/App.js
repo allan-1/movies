@@ -1,20 +1,20 @@
 import React from 'react'
 import './App.css';
-import Nav from './Nav'
-import Movies from './Movies'
-import TvShows from './TvShows'
-import Trending from './Trending'
-import MovieItem from './MovieItem'
-import Home from './Home'
-import SearchResult from './SearchResult'
-import NowPlaying from './NowPlaying'
-import Upcoming from './Upcoming';
+import Nav from './components/Nav'
+import Movies from './components/Movies'
+import TvShows from './components/TvShows'
+import Trending from './components/Trending'
+import MovieItem from './components/MovieItem'
+import Home from './components/Home'
+import SearchResult from './components/SearchResult'
+import NowPlaying from './components/NowPlaying'
+import Upcoming from './components/Upcoming';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import TopRated from './TopRated';
-import TvItem from './TvItem';
-import TvAir from './TvAir';
-import Footer from './Footer';
+import TopRated from './components/TopRated';
+import TvItem from './components/TvItem';
+import TvAir from './components/TvAir';
+import Footer from './components/Footer';
 
 function App() {
   return (

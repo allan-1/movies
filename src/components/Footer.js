@@ -8,7 +8,7 @@ function Footer() {
                 <a href="https://www.linkedin.com/in/allan-maina-ab78011aa/"><i className="fab fa-linkedin"></i></a>
                 <a href="https://github.com/Allan-1"><i className="fab fa-github-square"></i></a>
             </div>
-            <h1> © Copyright {new Date().getFullYear()} <a href='https://allanmaina.vercel.app/'>Allan</a></h1>
+            <h1> Copyright © {new Date().getFullYear()} <a href='https://allanmaina.vercel.app/'>Allan</a></h1>
         </div>
     )
 }

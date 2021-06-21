@@ -1,7 +1,7 @@
 import React from 'react'
 import Discover from './Discover'
 import Trending from './Trending'
-import './App.css';
+import '../App.css';
 import Search from './Search';
 
 function Home() {
