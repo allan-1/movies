@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import Search from './Search';
 
 function SearchResult({ match }) {
     const [searches, setSearches] = useState([]);
@@ -16,6 +17,7 @@ function SearchResult({ match }) {
     const baseImage = 'https://image.tmdb.org/t/p/w185'
     return (
         <div>
+            <Search/>
             <div className="search_header">
                 <h4>Showing results for: { match.params.name}</h4>
             </div>

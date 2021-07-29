@@ -322,14 +322,14 @@ nav{
 .footer a:hover{
   color: rgb(255, 205, 97);
 }
-.footer i{
+.footer .foot{
   color: #ffff;
   font-size: 1.3rem;
 }
 .footer .footer-links a{
   margin: 0.3rem 0.5rem;
 }
-.footer i:hover{
+.footer .foot:hover{
   color: #55acee;
 }
 /* download */
