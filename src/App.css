@@ -384,4 +384,12 @@ nav{
     overflow-y: hidden;
     align-items: center;
   }
+  .popular_movies{
+    display: grid;
+    grid-template-columns: repeat(2, auto)
+  }
+  .popular_movies img{
+    width: 150px;
+    object-fit: contain;
+  }
 }
