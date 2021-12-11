@@ -12,20 +12,25 @@ function Videos({moviedId}) {
     }
     const src = 'https://www.youtube.com/embed/' 
     return (
-        <div className='videos'>
+        <div className='video'>
+            <div className="video_header">
+                <h1>Trailers</h1>
+            </div>
+            <div className='videos'>
                 {
-                videos.map((video) => (
-                        <div key={video.id} className='trailer'>
-                        <iframe width='1000'
-                            height='600'
-                            title={video.name}
-                            key={video.id}
-                            src={src + video.key}
-                            allowFullScreen
-                            frameorder="0"></iframe>
-                        </div>
-                    ))
-                }
+                    videos.map((video) => (
+                            <div key={video.id} className='trailer'>
+                            <iframe width='1000'
+                                height='600'
+                                title={video.name}
+                                key={video.id}
+                                src={src + video.key}
+                                allowFullScreen
+                                frameorder="0"></iframe>
+                            </div>
+                        ))
+                    }
+            </div>
             
          </div>
     )

@@ -17,7 +17,7 @@ function Trending() {
     return (
         <div className='trending'>
             <div className="trendingHeader">
-                <h1>Upcoming</h1>
+                <h1>Trending</h1>
             </div>
             <div className="trending_content">
                 {

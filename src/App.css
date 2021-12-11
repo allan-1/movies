@@ -239,6 +239,9 @@ nav{
   /* height: 35rem;
   width: 70rem; */
 }
+.video_header{
+  padding: 0.2rem 1rem;
+}
 .trailer:hover{
   transform: perspective(10rem) translateZ(0.5rem);
 }
@@ -339,4 +342,46 @@ nav{
 }
 .dlinks:hover{
   color: #181616;
+}
+
+/* responsiveness */
+@media only screen and (max-width: 600px){
+  .texts{
+    font-size: 1rem;
+  }
+  .inputs input{
+    width: 14.35rem;
+    font-size: 1rem;
+  }
+  .movie_item{
+    display: block;
+  }
+  .movie_image{
+    margin: 1rem 1rem;
+  }
+  .movie_image img{
+    object-fit: fill;
+  }
+  .title{
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .top_details{
+    margin-bottom: 0.9rem;
+  }
+  .trailer iframe{
+    border: none;
+    height: 18rem;
+    width: 21rem;
+  }
+  .trailer{
+    margin: 0.9rem;
+  }
+  .videos{
+    background-color:rgb(175, 162, 162);
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    align-items: center;
+  }
 }
