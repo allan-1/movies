@@ -1,18 +1,18 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   font-family: 'Roboto', sans-serif;
 }
 /* .App {
   text-align: center;
 } */
-.search{
+.search {
   margin: 1.5rem 0;
 }
-.intro{
+.intro {
   background-image: url(./image/background.jpg);
   background-repeat: no-repeat;
   /* background-size: cover; */
@@ -23,16 +23,16 @@ body{
   display: flex;
   flex-direction: column;
 }
-.texts{
+.texts {
   font-size: 1.5rem;
 }
-.inputs{
+.inputs {
   background: white;
   width: 80%;
   border-radius: 15px;
   display: flex;
 }
-.inputs input{
+.inputs input {
   flex: 1;
   background: none;
   border: none;
@@ -42,7 +42,7 @@ body{
   font-size: 1.2rem;
   outline: none;
 }
-.inputs button{
+.inputs button {
   border: none;
   padding: 0.72rem;
   border-radius: 15px;
@@ -55,10 +55,10 @@ body{
   cursor: pointer;
   outline: none;
 }
-button:hover{
+button:hover {
   opacity: 0.8;
 }
-nav{
+nav {
   padding: 0.4rem 1rem;
   display: flex;
   justify-content: space-between;
@@ -67,35 +67,34 @@ nav{
   background-image: linear-gradient(-80deg, #30cfd0 0%, #330867 50%);
   color: white;
 }
-.nav-links{
+.nav-links {
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style-type: none;
 }
-.nav-links li{
+.nav-links li {
   margin: 0 1rem;
 }
-.links{
+.links {
   text-decoration: none;
   color: white;
   cursor: pointer;
 }
-.dropdown{
+.dropdown {
   position: relative;
   display: inline-block;
 }
-.dropdown-content{
+.dropdown-content {
   display: none;
   position: absolute;
   background-color: #ffff;
   min-width: 10rem;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
   cursor: pointer;
 }
-.dropdown-content li{
+.dropdown-content li {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -105,46 +104,52 @@ nav{
 .dropdown-content li:hover {
   background-color: #ddd;
 }
-.links:hover{
+.links:hover {
   text-decoration: underline;
 }
-.discover, .trending{
+.discover,
+.trending {
   display: flex;
   flex-direction: column;
 }
-.discover_contents, .trending_content{
+.discover_contents,
+.trending_content {
   display: flex;
   justify-content: space-between;
   overflow: scroll;
   overflow-y: hidden;
 }
-.movies_discover, .trend_items{
+.movies_discover,
+.trend_items {
   margin: 0.6rem;
   cursor: pointer;
 }
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.movies_discover:hover, .trend_items:hover{
+.movies_discover:hover,
+.trend_items:hover {
   transform: perspective(10rem) translateZ(0.5rem);
 }
-.movies_discover img, .trend_items img{
+.movies_discover img,
+.trend_items img {
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 10px 8px 20px gray;
 }
-.movies_discover p, .trend_items p{
+.movies_discover p,
+.trend_items p {
   font-size: 0.7rem;
 }
-.discoverheader, .trendingHeader{
+.discoverheader,
+.trendingHeader {
   padding: 1rem;
   font-size: 1rem;
 }
-.movielink{
+.movielink {
   text-decoration: none;
   color: black;
 }
-.movie_item{
+.movie_item {
   background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.719));
   background-size: cover;
   display: flex;
@@ -153,99 +158,99 @@ nav{
   align-items: center;
   color: white;
 }
-.movie_image{
+.movie_image {
   margin: 1.6rem 2rem;
 }
-.movie_image img{
+.movie_image img {
   border-radius: 10px;
 }
-.title{
+.title {
   font-size: 1rem;
 }
-.top_details{
+.top_details {
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
 }
-.top_details p{
-  margin-right: 0.6rem
+.top_details p {
+  margin-right: 0.6rem;
 }
-.top_genre{
+.top_genre {
   display: flex;
 }
-.search_header{
+.search_header {
   color: gray;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
-.search_link{
+.search_link {
   color: black;
   text-decoration: none;
 }
-.search_items{
+.search_items {
   display: flex;
 }
-.searches{
+.searches {
   background-color: #ffffff;
   margin: 1rem;
-  box-shadow: 5px 4px 20px #3d3b3b;
   border-radius: 10px;
 }
-.image img{
+.image img {
   object-fit: contain;
   height: 100%;
   border-radius: 10px;
 }
-.desc{
+.desc {
   display: flex;
   flex-direction: column;
   margin: 1rem;
 }
-.title{
+.title {
   margin-bottom: 1rem;
 }
-.title p{
+.title p {
   color: grey;
   font-style: italic;
 }
-.ratings{
+.ratings {
   margin-bottom: 0.5rem;
 }
-.ratings i{
+.ratings i {
   color: #ffff00;
   letter-spacing: 0.7rem;
 }
-.ratings p{
+.ratings p {
   font-size: 2rem;
 }
-.tagline{
+.tagline {
   font-weight: 100;
   font-style: italic;
   margin-bottom: 1rem;
 }
-.videos{
+.videos {
   background-color: black;
   display: flex;
   overflow: scroll;
   overflow-y: hidden;
   align-items: center;
 }
-.trailer{
+.trailer {
   margin: 2rem;
 }
-.trailer iframe{
+.trailer iframe {
   border: none;
   /* height: 35rem;
   width: 70rem; */
 }
-.video_header{
+.video_header {
   padding: 0.2rem 1rem;
 }
-.trailer:hover{
-  transform: perspective(10rem) translateZ(0.5rem);
+.trailer:hover {
+  transform: perspective(10rem) translateZ(0.2rem);
 }
-.casts, .recoms{
+.casts,
+.recoms {
   display: flex;
   flex-direction: column;
   overflow: scroll;
@@ -253,54 +258,59 @@ nav{
   margin: 1rem;
   padding: 0.5rem;
 }
-.cast_header, .recoms_header{
+.cast_header,
+.recoms_header {
   margin-bottom: 1rem;
 }
-.cast_each, .recom_each{
+.cast_each,
+.recom_each {
   display: flex;
   justify-content: space-between;
 }
-.cast, .recom{
+.cast,
+.recom {
   margin: 0.5rem;
   border-radius: 10px;
-  box-shadow: 10px 8px 20px gray;
   padding-bottom: 3rem;
 }
-.cast img, .recom img{
+.cast img,
+.recom img {
   border-radius: 10px;
 }
-.cast h3, .recom_details h3{
+.cast h3,
+.recom_details h3 {
   color: #181616;
   font-size: 1rem;
   padding: 0.5rem 0.5rem 0;
 }
-.cast p, .recom_details p{
+.cast p,
+.recom_details p {
   color: #534d4d;
   padding: 0 0.5rem;
 }
-.recom{
+.recom {
   padding-bottom: 0;
 }
-.rating i{
+.rating i {
   color: #ffff00;
 }
 .recom_details p {
   margin-top: 0.5rem;
   padding-bottom: 1rem;
 }
-.popular_movies{
+.popular_movies {
   display: grid;
-  grid-template-columns: repeat(6, auto)
+  grid-template-columns: repeat(6, auto);
   /* display: flex;
   flex-wrap: wrap;
   justify-content: center; */
 }
-.btns{
+.btns {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.buttons{
+.buttons {
   background-color: #e2dcd8;
   border: none;
   cursor: pointer;
@@ -308,7 +318,7 @@ nav{
   margin: 0.5rem;
 }
 /* footer component */
-.footer{
+.footer {
   text-align: center;
   font-size: 0.7rem;
   color: #ffff;
@@ -317,78 +327,78 @@ nav{
   position: static;
   bottom: 0;
 }
-.footer a{
+.footer a {
   color: #ffff;
   cursor: pointer;
   text-decoration: none;
 }
-.footer a:hover{
+.footer a:hover {
   color: rgb(255, 205, 97);
 }
-.footer .foot{
+.footer .foot {
   color: #ffff;
   font-size: 1.3rem;
 }
-.footer .footer-links a{
+.footer .footer-links a {
   margin: 0.3rem 0.5rem;
 }
-.footer .foot:hover{
+.footer .foot:hover {
   color: #55acee;
 }
 /* download */
-.dlinks{
+.dlinks {
   color: #ffff;
   font-size: 1.2rem;
 }
-.dlinks:hover{
+.dlinks:hover {
   color: #181616;
 }
 
 /* responsiveness */
-@media only screen and (max-width: 600px){
-  .texts{
+@media only screen and (max-width: 600px) {
+  .texts {
     font-size: 1rem;
   }
-  .inputs input{
+  .inputs input {
     width: 14.35rem;
     font-size: 1rem;
   }
-  .movie_item{
+  .movie_item {
     display: block;
   }
-  .movie_image{
+  .movie_image {
     margin: 1rem 1rem;
   }
-  .movie_image img{
+  .movie_image img {
     object-fit: fill;
   }
-  .title{
+  .title {
     font-size: 1.4rem;
     margin-bottom: 0.5rem;
   }
-  .top_details{
+  .top_details {
     margin-bottom: 0.9rem;
   }
-  .trailer iframe{
+  .trailer iframe {
     border: none;
     height: 18rem;
     width: 21rem;
   }
-  .trailer{
+  .trailer {
     margin: 0.9rem;
   }
-  .videos{
-    background-color:rgb(175, 162, 162);
+  .videos {
+    background-color: rgb(175, 162, 162);
     display: flex;
     overflow: scroll;
     overflow-y: hidden;
     align-items: center;
   }
-  .popular_movies{
+  .popular_movies {
     display: grid;
-    grid-template-columns: repeat(2, auto)
+    grid-template-columns: repeat(2, auto);
   }
-  .popular_movies img{
+  .popular_movies img {
     width: 150px;
     object-fit: contain;
   }
