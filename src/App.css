@@ -6,17 +6,12 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-/* .App {
-  text-align: center;
-} */
 .search {
   margin: 1.5rem 0;
 }
 .intro {
   background-image: url(./image/background.jpg);
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-position: center; */
   background-attachment: fixed;
   color: white;
   padding: 1rem;
@@ -301,9 +296,6 @@ nav {
 .popular_movies {
   display: grid;
   grid-template-columns: repeat(6, auto);
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: center; */
 }
 .btns {
   display: flex;
